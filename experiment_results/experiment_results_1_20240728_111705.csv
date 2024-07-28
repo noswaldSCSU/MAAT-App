@@ -1,0 +1,21 @@
+Participant ID,Trial ID,Stimuli,Valence,Block Name,Response Time (ms),"Accuracy (1=Correct, 0=Incorrect)",Experiment ID
+1,6,Good,2,Block 3,1924.0,0,1
+1,7,Happy,2,Block 4,86.0,0,1
+1,5,Candy,2,Block 2,738.0,1,1
+1,8,Sad,-2,Block 5,3706.0,1,1
+1,7,Happy,2,Block 4,1684.0,0,1
+1,6,Good,2,Block 3,4241.0,0,1
+1,4,Knife,-2,Block 1,1054.0,1,1
+1,5,Candy,2,Block 2,935.0,0,1
+1,4,Knife,-2,Block 1,1572.0,1,1
+1,7,Happy,2,Block 4,1399.0,0,1
+1,6,Good,2,Block 3,1494.0,1,1
+1,8,Sad,-2,Block 5,1386.0,1,1
+1,5,Candy,2,Block 2,1199.0,0,1
+1,8,Sad,-2,Block 5,9943.0,0,1
+1,7,Happy,2,Block 4,1742.0,1,1
+1,5,Candy,2,Block 2,2407.0,0,1
+1,8,Sad,-2,Block 5,1615.0,1,1
+1,6,Good,2,Block 3,1054.0,0,1
+1,7,Happy,2,Block 4,2935.0,0,1
+1,4,Knife,-2,Block 1,1270.0,1,1

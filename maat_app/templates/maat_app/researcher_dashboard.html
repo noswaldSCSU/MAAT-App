@@ -1,0 +1,38 @@
+{% extends "maat_app/base.html" %}
+
+{% block title %}Researcher Dashboard{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h2>Researcher Dashboard</h2>
+
+    <div class="manage-section">
+        <h3>Manage Experiments</h3>
+        <a href="{% url 'create_experiment_step1' %}" class="button">Create New Experiment</a> <!-- Update this line -->
+        <ul>
+            {% for experiment in experiments %}
+                <li>
+                    <strong>{{ experiment.name }}</strong>
+                    <a href="{% url 'edit_experiment' experiment.id %}" class="button">Edit</a>
+                    <a href="{% url 'delete_experiment' experiment.id %}" class="button">Delete</a>
+                    <a href="{% url 'export_csv' experiment.id %}" class="button">Export CSV</a> <!-- Add this line -->
+                    <ul>
+                        {% for trial in experiment.trials.all %}
+                            <li>
+                                {{ trial.stimuli }}
+                                <a href="{% url 'edit_trial' trial.id %}" class="button">Edit</a>
+                                <a href="{% url 'delete_trial' trial.id %}" class="button">Delete</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="manage-section">
+        <h3>Manage Participants</h3>
+        <a href="{% url 'manage_participants' %}" class="button">Manage Participants</a>
+    </div>
+</div>
+{% endblock %}
